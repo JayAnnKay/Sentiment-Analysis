@@ -1,0 +1,17 @@
+Yelp is a famous American merchant review website. Search for a restaurant or hotel in Yelp, you can see its brief introduction and the comments of netizens. Yelp provides us a holistic view about restaurant, such as giving overall review, score or ratings. 
+
+Official website: https://www.yelp.com/
+
+The dataset contains the following attributes - 
+'business_id', 'date', 'review_id', 'stars', 'text', 'type', 'user_id', 'cool', 'useful', 'funny'
+
+To perform sentiment analysis, we retain only the text review and the corresponding rating(stars) and ignore the rest of the attributes. 
+
+1. We use Countvectorize from scikit-learn library to translate our document to a dictionary of features.
+2. TF-IDF is used to regulate feature weights.
+
+The models used for prediction are 
+
+1. Logistic Regression 
+
+2. Gaussian Naive Bayes
